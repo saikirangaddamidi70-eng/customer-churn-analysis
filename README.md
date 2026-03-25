@@ -74,5 +74,5 @@ This project demonstrates how data analysis and visualization can be used to ide
 ---
 
 ## ⭐ Author
-G.Sai Kiran
+G.Sai Kiran.
 
