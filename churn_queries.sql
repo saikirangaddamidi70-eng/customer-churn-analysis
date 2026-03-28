@@ -1,0 +1,12 @@
+SHOW databases;
+use churn_db;
+SELECT COUNT(*) AS total_customers FROM churn_data;
+SELECT churn,COUNT(*) as total FROM churn_data GROUP BY Churn;
+SELECT ROUND(SUM(CASE WHEN Churn='Yes' THEN 1 ELSE 0 END)*100.0/COUNT(*),2) AS churn_rate FROM churn_data;
+SELECT COUNT(*) AS total_customers FROM churn_data;
+SELECT AVG(Monthly_Charges) AS avg_monthly_charges FROM churn_data;
+SELECT Subscription_Type, COUNT(*) AS churned_customers FROM churn_data WHERE Churn='Yes' GROUP BY Subscription_Type;
+SELECT AVG(Tenure_Months) AS avg_tenure FROM churn_data WHERE Churn='Yes';
+SELECT Payment_Method, COUNT(*) AS churned FROM churn_data WHERE Churn='Yes' GROUP BY Payment_Method;
+SELECT Customer_Support_Calls, COUNT(*) AS churned FROM churn_data WHERE Churn='Yes' GROUP BY Customer_Support_Calls ORDER BY churned DESC;
+SELECT Contract_Type, COUNT(*) AS customers FROM churn_data GROUP BY Contract_Type ORDER BY customers DESC;
