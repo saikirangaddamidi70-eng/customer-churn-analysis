@@ -64,7 +64,7 @@ This project focuses on analyzing customer churn to understand the key factors t
 ---
 
 ## 📸 Dashboard Preview
-_Add your dashboard screenshot here_
+![Churn Dashboard](churn_overview.png)
 
 ---
 
